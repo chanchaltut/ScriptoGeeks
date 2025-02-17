@@ -1,6 +1,15 @@
-
 import { useEffect } from "react";
-import { ArrowRight, Code, Users, Calendar, Star, Terminal, Rocket, Trophy, Globe } from "lucide-react";
+import {
+  ArrowRight,
+  Code,
+  Users,
+  Calendar,
+  Star,
+  Terminal,
+  Rocket,
+  Trophy,
+  Globe,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -31,7 +40,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/5" />
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gradient animate-on-scroll">
-            Welcome to Coding Club
+            Welcome to ScriptoGeeks
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8 animate-on-scroll">
             Where innovation meets code. Join us in exploring the frontiers of
@@ -82,17 +91,20 @@ const Index = () => {
               {
                 icon: Terminal,
                 title: "Hands-on Learning",
-                description: "Get practical experience with real-world projects and industry-standard tools.",
+                description:
+                  "Get practical experience with real-world projects and industry-standard tools.",
               },
               {
                 icon: Rocket,
                 title: "Innovation Hub",
-                description: "Be part of a community that pushes the boundaries of technology.",
+                description:
+                  "Be part of a community that pushes the boundaries of technology.",
               },
               {
                 icon: Trophy,
                 title: "Competitions",
-                description: "Participate in hackathons and coding competitions to showcase your skills.",
+                description:
+                  "Participate in hackathons and coding competitions to showcase your skills.",
               },
             ].map((feature, index) => (
               <div
@@ -118,8 +130,9 @@ const Index = () => {
                 Global Impact
               </h2>
               <p className="text-lg text-foreground/80 mb-6">
-                Our members are making waves in the tech industry, contributing to open-source
-                projects, and building solutions that impact millions of users worldwide.
+                Our members are making waves in the tech industry, contributing
+                to open-source projects, and building solutions that impact
+                millions of users worldwide.
               </p>
               <Link
                 to="/projects"
@@ -146,7 +159,8 @@ const Index = () => {
             Ready to Start Your Journey?
           </h2>
           <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-8 animate-on-scroll">
-            Join our community of passionate developers and start building the future today.
+            Join our community of passionate developers and start building the
+            future today.
           </p>
           <Link
             to="/join"
