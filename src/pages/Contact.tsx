@@ -1,4 +1,3 @@
-
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -36,11 +35,13 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div className="glass-card p-6 animate-on-scroll hover-scale">
-                <h2 className="text-2xl font-bold mb-6 text-gradient">Get in Touch</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gradient">
+                  Get in Touch
+                </h2>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Mail className="w-5 h-5 mr-3 text-primary-dark" />
-                    <p>contact@codingclub.com</p>
+                    <p>contact@scriptogeeks.com</p>
                   </div>
                   <div className="flex items-center">
                     <Phone className="w-5 h-5 mr-3 text-primary-dark" />
@@ -54,7 +55,9 @@ const Contact = () => {
               </div>
 
               <div className="glass-card p-6 animate-on-scroll hover-scale">
-                <h2 className="text-2xl font-bold mb-6 text-gradient">Office Hours</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gradient">
+                  Office Hours
+                </h2>
                 <p className="mb-2">Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p>Saturday - Sunday: Closed</p>
               </div>
@@ -62,7 +65,9 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div className="glass-card p-8 animate-on-scroll">
-              <h2 className="text-2xl font-bold mb-6 text-gradient">Send us a Message</h2>
+              <h2 className="text-2xl font-bold mb-6 text-gradient">
+                Send us a Message
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2">Name</label>
@@ -73,7 +78,9 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Email</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Email
+                  </label>
                   <input
                     type="email"
                     className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-dark focus:border-transparent transition-all"
@@ -81,7 +88,9 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Subject</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Subject
+                  </label>
                   <input
                     type="text"
                     className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-dark focus:border-transparent transition-all"
@@ -89,7 +98,9 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Message</label>
+                  <label className="block text-sm font-medium mb-2">
+                    Message
+                  </label>
                   <textarea
                     rows={4}
                     className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-dark focus:border-transparent transition-all"

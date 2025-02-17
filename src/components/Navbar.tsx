@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -43,7 +42,7 @@ const Navbar = () => {
             to="/"
             className="text-2xl font-bold text-gradient hover:scale-105 transition-transform duration-300"
           >
-            CodingClub
+            ScriptoGeeks
           </Link>
 
           {/* Desktop Navigation */}
@@ -76,7 +75,9 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden absolute top-full left-0 w-full glass-card mt-2 py-4 px-4 space-y-4 transition-all duration-300 transform ${
-            isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0 pointer-events-none"
+            isMenuOpen
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-4 opacity-0 pointer-events-none"
           }`}
         >
           {navItems.map((item) => (
